@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -125,7 +124,7 @@ const Index = () => {
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
-              src="/lovable-uploads/386beec3-cc23-4cf4-a005-8ad32a19a799.png" 
+              src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
               alt="Byte Piper Logo" 
               className="h-10 w-auto"
             />
@@ -414,9 +413,9 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex items-center space-x-3 mb-4 md:mb-0">
               <img 
-                src="/lovable-uploads/386beec3-cc23-4cf4-a005-8ad32a19a799.png" 
+                src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
                 alt="Byte Piper Logo" 
-                className="h-8 w-auto filter brightness-0 invert"
+                className="h-8 w-auto"
               />
             </div>
             
