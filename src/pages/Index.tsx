@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -127,7 +126,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
               alt="Byte Piper Logo" 
-              className="h-10 w-auto"
+              className="h-14 w-auto"
             />
           </div>
           
@@ -416,7 +415,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
                 alt="Byte Piper Logo" 
-                className="h-8 w-auto"
+                className="h-12 w-auto"
               />
             </div>
             
