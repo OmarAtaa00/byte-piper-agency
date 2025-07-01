@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -120,7 +121,7 @@ const Index = () => {
   return (
     <div className={`min-h-screen transition-all duration-300 ${darkMode ? 'dark' : ''}`}>
       {/* Header */}
-      <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-200 dark:border-gray-700">
+      <header className="fixed top-0 left-0 right-0 z-50 bg-gray-900 dark:bg-gray-900/95 backdrop-blur-md border-b border-gray-700 dark:border-gray-700">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center space-x-3">
             <img 
@@ -134,25 +135,25 @@ const Index = () => {
           <nav className="hidden md:flex items-center space-x-8">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors font-medium"
+              className="text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 transition-colors font-medium"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors font-medium"
+              className="text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 transition-colors font-medium"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors font-medium"
+              className="text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 transition-colors font-medium"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 transition-colors font-medium"
+              className="text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 transition-colors font-medium"
             >
               Contact
             </button>
@@ -163,7 +164,7 @@ const Index = () => {
               variant="ghost"
               size="icon"
               onClick={toggleDarkMode}
-              className="hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="hover:bg-gray-800 dark:hover:bg-gray-800 text-gray-300"
               aria-label="Toggle dark mode"
             >
               {darkMode ? <Sun className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
@@ -174,7 +175,7 @@ const Index = () => {
               variant="ghost"
               size="icon"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="md:hidden hover:bg-gray-100 dark:hover:bg-gray-800"
+              className="md:hidden hover:bg-gray-800 dark:hover:bg-gray-800 text-gray-300"
               aria-label="Toggle menu"
             >
               {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -183,29 +184,29 @@ const Index = () => {
         </div>
 
         {/* Mobile Navigation */}
-        <div className={`md:hidden bg-white dark:bg-gray-900 border-t border-gray-200 dark:border-gray-700 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`md:hidden bg-gray-900 dark:bg-gray-900 border-t border-gray-700 dark:border-gray-700 ${mobileMenuOpen ? 'block' : 'hidden'}`}>
           <nav className="px-4 py-4 space-y-2">
             <button 
               onClick={() => scrollToSection('home')} 
-              className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              className="block w-full text-left px-3 py-2 text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 hover:bg-gray-800 dark:hover:bg-gray-800 rounded-lg transition-colors"
             >
               Home
             </button>
             <button 
               onClick={() => scrollToSection('about')} 
-              className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              className="block w-full text-left px-3 py-2 text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 hover:bg-gray-800 dark:hover:bg-gray-800 rounded-lg transition-colors"
             >
               About
             </button>
             <button 
               onClick={() => scrollToSection('services')} 
-              className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              className="block w-full text-left px-3 py-2 text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 hover:bg-gray-800 dark:hover:bg-gray-800 rounded-lg transition-colors"
             >
               Services
             </button>
             <button 
               onClick={() => scrollToSection('contact')} 
-              className="block w-full text-left px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-red-500 dark:hover:text-red-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-lg transition-colors"
+              className="block w-full text-left px-3 py-2 text-gray-300 dark:text-gray-300 hover:text-red-400 dark:hover:text-red-400 hover:bg-gray-800 dark:hover:bg-gray-800 rounded-lg transition-colors"
             >
               Contact
             </button>
