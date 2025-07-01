@@ -127,7 +127,7 @@ const Index = () => {
             <img 
               src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
               alt="Byte Piper Logo" 
-              className="h-20 w-auto"
+              className="h-40 w-auto"
             />
           </div>
           
@@ -416,7 +416,7 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/cd2df292-dc5f-4f97-9869-2ac11fc35d93.png" 
                 alt="Byte Piper Logo" 
-                className="h-16 w-auto"
+                className="h-32 w-auto"
               />
             </div>
             
