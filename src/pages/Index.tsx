@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -5,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Moon, Sun, ArrowUp, Code, Smartphone, Database, Menu, X, ExternalLink, Mail, Zap, Target, CheckCircle, Users, HeartHandshake } from 'lucide-react';
 
 const Index = () => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
