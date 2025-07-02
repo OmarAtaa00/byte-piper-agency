@@ -5,7 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Moon, Sun, ArrowUp, Code, Smartphone, Database, Menu, X, ExternalLink, Mail, Zap, Target, CheckCircle, Users, HeartHandshake } from 'lucide-react';
 
 const Index = () => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
   const [showBackToTop, setShowBackToTop] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
@@ -23,7 +23,7 @@ const Index = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, []);
+  }, [darkMode]);
 
   useEffect(() => {
     const handleScroll = () => {
