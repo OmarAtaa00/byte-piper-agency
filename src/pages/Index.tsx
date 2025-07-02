@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from 'react';
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,7 +23,7 @@ const Index = () => {
     } else {
       document.documentElement.classList.remove('dark');
     }
-  }, [darkMode]);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -41,6 +40,22 @@ const Index = () => {
         }
       });
     };
+
+    // Trigger animation check on page load
+    const initialAnimationCheck = () => {
+      const elements = document.querySelectorAll('.fade-in-up');
+      elements.forEach((element) => {
+        const elementTop = element.getBoundingClientRect().top;
+        const elementVisible = 150;
+        
+        if (elementTop < window.innerHeight - elementVisible) {
+          element.classList.add('visible');
+        }
+      });
+    };
+
+    // Run initial check after component mounts
+    setTimeout(initialAnimationCheck, 100);
 
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
@@ -217,7 +232,7 @@ const Index = () => {
       {/* Hero Section */}
       <section id="home" className="pt-24 pb-20 bg-gradient-to-br from-gray-50 to-red-50 dark:from-gray-900 dark:to-gray-800 hero-pattern">
         <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto fade-in-up">
+          <div className="max-w-4xl mx-auto fade-in-up visible">
             <Badge className="mb-6 bg-red-100 text-red-800 dark:bg-red-900/30 dark:text-red-200 border-red-200 dark:border-red-800">
               Agile Software Development
             </Badge>
